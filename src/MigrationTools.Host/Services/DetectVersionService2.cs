@@ -145,9 +145,9 @@ namespace MigrationTools.Host.Services
                 if (IsPackageManagerInstalled && _package == null)
                 {
                     _packageManager = new WinGetPackageManager();
-                    Log.Debug("Searching for package!");
+                    Log.Information("Searching for install package! This may get stuck on some networks... pass `skipVersionCheck` on the command line.");
                     _package = _packageManager.GetInstalledPackages(PackageId, true).FirstOrDefault();
-                    Log.Debug("Found package with id {PackageId}", PackageId);
+                    Log.Information("Found package with id {PackageId}", PackageId);
                 }
                 _packageChecked = true;
             }
