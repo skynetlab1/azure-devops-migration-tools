@@ -6,7 +6,7 @@ source "https://rubygems.org"
 gem 'jekyll-relative-links'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
-gem 'jekyll-toc'
+gem 'jekyll-toc', '>= 0.19.0'
 gem 'jekyll-time-to-read'
 gem 'jekyll-github-metadata'
 gem 'jekyll-last-modified-at'
